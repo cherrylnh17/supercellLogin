@@ -1,0 +1,174 @@
+@font-face {
+  font-family: SupercellText-Bold;
+  src: url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_bd.eot);
+  src: url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_bd.eot?#iefix) format("embedded-opentype"),url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_bd.woff2) format("woff2"),url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_bd.woff) format("woff"),url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_bd.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: SupercellText-Medium;
+  src: url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_md.eot);
+  src: url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_md.eot?#iefix) format("embedded-opentype"),url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_md.woff2) format("woff2"),url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_md.woff) format("woff"),url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_md.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: SupercellText-Regular;
+  src: url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_rg.eot);
+  src: url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_rg.eot?#iefix) format("embedded-opentype"),url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_rg.woff2) format("woff2"),url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_rg.woff) format("woff"),url(//cdn.supercell.com/fonts/supercell/supercelltext/full/supercelltext_w_rg.ttf) format("truetype")
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #90b6f5;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 30em;
+    padding: 40px;
+    margin-top: 3em;
+    border-radius: 1em;  
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 3px 3px 5px #555;
+}
+
+.container .logoSupercell{
+    overflow: hidden;
+}
+
+.container .logoSupercell img{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 45%;
+    height: auto;
+}
+
+
+.labelBar{
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  font-size: 13px;
+  margin: .5em;
+}
+
+
+.progress-container {
+    position: relative;
+    background:  #4285f4;
+    height: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    background: linear-gradient(to right, #4285f4, #0f9d58);
+    height: 100%;
+    width: 0%;
+    border-radius: 15px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+  }
+  
+  .progress-indicator {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: .8em;
+    height: .8em;
+    background-color: white;
+    border-radius: 50%;
+    transition: left 1s ease-in-out;
+  }
+  
+  .start-label, .end-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .start-label {
+    left: 10px;
+  }
+  
+  .end-label {
+    right: 10px;
+  }
+  
+
+  .bodyContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bodyContainer :nth-child(1){
+    font-size: 26px;
+    font-family: SupercellText-Bold,Helvetica,sans-serif;
+  }
+
+  .bodyContainer :nth-child(2){
+    width: 80%;
+    font-size: 16px;
+    font-family: SupercellText-Regular,Helvetica, sans-serif;
+    text-align: center;
+    opacity: .7;
+    margin: .5em;
+  }
+
+  .inputSupercell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+  }
+
+  .inputSupercell input{
+    width: 90%;
+    padding: 1em;
+    font-size: 14px;
+    border-radius: .8em;
+    background: #f5eded;
+    outline: 2px solid rgba(128, 128, 128, 0.5);
+    border: 2px solid rgba(128, 128, 128, 0.5);
+  }
+
+  .inputSupercell input:focus{
+    outline: 2px solid #0062ff;
+    border: 2px solid #0062ff;
+  }
+
+  .inputSupercell span{
+    text-align: center;
+    font-size: 13px;
+    margin: .8em;
+    font-family:SupercellText-Regular,Helvetica, sans-serif;
+    opacity: .8;
+  }
+
+  .inputSupercell span a{
+    text-decoration: none;
+    color: #0004ff;
+  }
