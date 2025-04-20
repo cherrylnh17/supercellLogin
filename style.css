@@ -151,8 +151,8 @@ main{
     font-size: 14px;
     border-radius: .8em;
     background: #f5eded;
-    outline: 2px solid rgba(128, 128, 128, 0.5);
-    border: 2px solid rgba(128, 128, 128, 0.5);
+    outline: 1px solid rgba(128, 128, 128, 0.5);
+    border: 1px solid rgba(128, 128, 128, 0.5);
   }
 
   .inputSupercell input:focus{
