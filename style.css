@@ -107,15 +107,15 @@ main{
     align-items: center;
   }
 
-  .bodyContainer :nth-child(1){
+  .bodyContainer span:nth-child(1){
     font-size: 26px;
     font-family: SupercellText-Bold,Helvetica,sans-serif;
   }
 
-  .bodyContainer :nth-child(2){
+  .bodyContainer span:nth-child(2){
     width: 80%;
     font-size: 14px;
-    font-family: SupercellText-Regular,Helvetica, sans-serif;
+    font-family: SupercellText-Medium,Helvetica, sans-serif;
     text-align: center;
     opacity: .7;
     margin: .5em;
