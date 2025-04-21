@@ -49,10 +49,6 @@ main{
     box-shadow: 3px 3px 5px #555;
 }
 
-.container .logoSupercell{
-    overflow: hidden;
-}
-
 .container .logoSupercell img{
     display: flex;
     justify-self: center;
@@ -73,10 +69,10 @@ main{
 
 .progress-container {
     position: relative;
-    background:  #4285f4;
-    height: 20px;
+    background: #4285f4;
+    min-height: 20px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 1.3em;
     overflow: hidden;
   }
   
@@ -131,7 +127,7 @@ main{
 
   .bodyContainer :nth-child(2){
     width: 80%;
-    font-size: 16px;
+    font-size: 14px;
     font-family: SupercellText-Regular,Helvetica, sans-serif;
     text-align: center;
     opacity: .7;
@@ -148,16 +144,16 @@ main{
   .inputSupercell input{
     width: 90%;
     padding: 1em;
-    font-size: 14px;
-    border-radius: .8em;
-    background: #f5eded;
-    outline: 1px solid rgba(128, 128, 128, 0.5);
-    border: 1px solid rgba(128, 128, 128, 0.5);
+    font-size: 16px;
+    border-radius: .7em;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 4px inset rgba(128, 128, 128, 0.5);
   }
 
   .inputSupercell input:focus{
-    outline: 2px solid #0062ff;
-    border: 2px solid #0062ff;
+    outline: 3px solid #0062ff;
   }
 
   .inputSupercell span{
@@ -172,3 +168,53 @@ main{
     text-decoration: none;
     color: #0004ff;
   }
+
+
+.button{
+  display: flex;
+  flex-direction: column;
+  gap: .7em;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.button button{
+  width: 90%;
+  padding: .8em;
+  border-radius: 1em;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: SupercellText-Bold,Helvetica, sans-serif;
+}
+
+.button button:nth-child(1){
+  background: #0062ff;
+  color: #f5eded;
+  transition: background .5s ease-in;
+  border: none;
+}
+
+.button button:nth-child(1):hover{
+  background: #023891;
+}
+
+.button button:nth-child(2){
+  background: #ffffff;
+  color: #000000;
+  outline: 2px solid #555;
+  opacity: .5;
+  transition: opacity .5s ease-in;
+}
+
+.button button:nth-child(2):hover{
+  opacity: 1;
+}
+
+.pendaftaranSupercell{
+  text-align: center;
+}
+
+.pendaftaranSupercell a{
+  text-decoration: none;
+  color: #0051d4;
+}
