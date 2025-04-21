@@ -201,7 +201,7 @@ main{
 .button button:nth-child(2){
   background: #ffffff;
   color: #000000;
-  outline: 1px solid #555;
+  border: 1px solid #555;
   opacity: .5;
   transition: opacity .5s ease-in;
 }
