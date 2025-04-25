@@ -271,7 +271,8 @@ main{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  justify-items: space-between;
+  justify-items: center;
+  align-items: center;
   gap: .5em;
 }
 
