@@ -272,7 +272,7 @@ main{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-items: space-between;
-  gap: 2px;
+  gap: .5em;
 }
 
 .wrapper input.field {
@@ -376,5 +376,10 @@ button.resend i {
     width: 50%;
     height: auto;
   }
+
+  .wrapper {
+    gap: 2px;
+  }
+  
 
 }
