@@ -171,15 +171,14 @@ main{
   border-radius: 1em;
   font-weight: 600;
   font-size: 18px;
-  font-family: SupercellText-Bold,Helvetica, sans-serif;
-}
-
-.button button{
-  background: #0062ff;
+  background: #2d78f0;
   color: #f5eded;
   transition: background .5s ease-in;
   border: none;
+  font-family: SupercellText-Bold,Helvetica, sans-serif;
 }
+
+
 
 .button button:hover{
   background: #023891;
@@ -213,8 +212,9 @@ main{
   text-align: center;
 }
 
-.pendaftaranSupercell a{
+.pendaftaranSupercell span{
   text-decoration: none;
+  cursor: pointer;
   color: #0051d4;
 }
 
@@ -245,29 +245,112 @@ main{
   margin: 0 0 .3em 0;
 }
 
-.bodyContainer-2 span:nth-child(2),
-.bodyContainer-2 span:nth-child(3){
+.bodyContainer-2 span:nth-child(2){
     font-size: 14px;
     font-family: SupercellText-Medium,Helvetica, sans-serif;
     opacity: .7;
 }
 
-
-
-
-.verificationCodeInput {
-  margin-bottom: 15px;
+.bodyContainer-2 span:nth-child(3){
+  font-size: 14px;
+  font-family: SupercellText-Bold,Helvetica, sans-serif;
+  opacity: .9;
 }
 
-.verificationCodeInput input[type="number"] {
-  width: 150px; /* Sesuaikan lebar sesuai kebutuhan */
-  padding: 10px;
-  border: 1px solid #ccc;
+
+.swal2-title{
+  font-family: SupercellText-Bold,Helvetica, sans-serif;
+}
+
+.swal2-content{
+  font-family: SupercellText-Bold,Helvetica, sans-serif;
+}
+
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: space-between;
+}
+
+.wrapper input.field {
+  width: 2.5em;
+  line-height: 3.5em;
+  font-size: 20px;
+  border: none;
+  background-color: #dde9e9;
   border-radius: 5px;
-  font-size: 16px;
-  text-align: center; /* Agar kode terlihat di tengah */
-
+  text-align: center;
+  text-transform: uppercase;
+  color: #093030;
+  margin-bottom: .3em;
+  box-shadow: 1px 1px 5px #8a9da5;
+  font-family: SupercellText-Bold,Helvetica, sans-serif;
 }
+
+.wrapper input.field:focus {
+  outline: none;
+}
+
+
+.container2-button{
+  display: flex;
+  flex-direction: column;
+  gap: .7em;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+
+.container2-button button{
+  width: 90%;
+  padding: .8em;
+  border-radius: 1em;
+  font-weight: 600;
+  font-size: 18px;
+  background: #2d78f0;
+  color: #f5eded;
+  transition: background .5s ease-in, opacity .5s ease-in;
+  border: none;
+  font-family: SupercellText-Bold,Helvetica, sans-serif;
+}
+
+.container2-button button:hover{
+  background: #023891;
+}
+
+
+.container2-button button:nth-child(1){
+  background: #edf3f0;
+  border: 3px solid #555;
+  opacity: .7;
+  color: #000000;
+}
+
+.container2-button button:nth-child(1):hover{
+  opacity: 1;
+}
+
+button.resend {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  color: #3DAFE1;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+
+button.resend i {
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 767px) {
   body {
@@ -277,6 +360,11 @@ main{
     width: 80%;
     height: auto;
   }
+
+  .wrapper input.field {
+    font-size: 16px;
+  }
+
 }
 
 
@@ -288,4 +376,5 @@ main{
     width: 50%;
     height: auto;
   }
+
 }
