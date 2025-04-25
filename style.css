@@ -378,6 +378,8 @@ button.resend i {
   }
 
   .wrapper input.field {
+    width: 3em;
+    line-height: 4em;
     font-size: 18px;
   }
   .wrapper {
