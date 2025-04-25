@@ -377,6 +377,9 @@ button.resend i {
     height: auto;
   }
 
+  .wrapper input.field {
+    font-size: 18px;
+  }
   .wrapper {
     gap: 2px;
   }
